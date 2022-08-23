@@ -59,13 +59,6 @@ jobs:
               console.log('Discussion created ' + discussionUrl)
             }
 
-            await github.rest.issues.addLabels({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              labels: ['rfc: proposed']
-            })
-
             await github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
@@ -81,6 +74,13 @@ jobs:
                 '> **Note**',
                 '> **Do NOT comment on this PR. Please use the discussion thread linked above to provide feedback, as it provides branched discussions that are easier to follow. This also makes the edit history of the PR clearer.**'
               ].join('\n')
+            })
+
+            await github.rest.issues.addLabels({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ['rfc: proposed']
             })
 
 # To get category ID, execute following GraphQL in https://docs.github.com/en/graphql/overview/explorer
