@@ -41,7 +41,7 @@ jobs:
             }
             else {
               const discussionBody = [
-                `This is an [RFC](https://github.com/vitejs/rfcs) proposal by @${context.payload.pull_request.user.login}. To participle the process, please read thoroughly about the proposal and then provide feedback or join the discussions below.`,
+                `This is an [RFC](https://github.com/vitejs/rfcs) proposed by @${context.payload.pull_request.user.login}. To participate in the process, please read thoroughly about the proposal and then provide feedback or join the discussions below.`,
                 '',
                 `- [📖 Full Rendered Proposal](${renderedUrl})`,
                 '',
@@ -71,7 +71,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               body: [
-                'This is an [RFC](https://github.com/vitejs/rfcs) pull request. To participle the process, please read thoroughly about the proposal and provide feedback in the discussion thread with the link below.',
+                'This is an [RFC](https://github.com/vitejs/rfcs) pull request. To participate in the process, please read thoroughly about the proposal and provide feedback in the discussion thread with the link below.',
                 '',
                 `[📖 Full Rendered Proposal](${renderedUrl})`,
                 '',

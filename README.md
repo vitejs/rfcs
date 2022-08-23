@@ -53,7 +53,7 @@ In short, to get a major feature added to Vite, one must first get the RFC merge
 
     - Put care into the details: **RFCs that do not present convincing motivation, demonstrate understanding of the impact of the design, or are disingenuous about the drawbacks or alternatives tend to be poorly-received**.
 
-2.  Open a new thread in [Discussions](https://github.com/vitejs/vite/discussions) and make sure to set category to "RFC Discussions".
+2.  Open a new thread in [Discussions](https://github.com/vitejs/rfcs/discussions) and make sure to set category to "RFC Discussions".
 
     - Build consensus and integrate feedback in the discussion thread. RFCs that have broad support are much more likely to make progress than those that don't receive any comments.
 
