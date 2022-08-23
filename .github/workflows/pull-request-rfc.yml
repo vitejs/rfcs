@@ -76,13 +76,6 @@ jobs:
               ].join('\n')
             })
 
-            await github.rest.issues.addLabels({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              labels: ['rfc: proposed']
-            })
-
 # To get category ID, execute following GraphQL in https://docs.github.com/en/graphql/overview/explorer
 # query {
 #   repository(owner: "vitejs", name: "rfcs") {
