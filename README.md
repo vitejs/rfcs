@@ -16,7 +16,7 @@ An RFC goes through the following stages:
 - **Accepted:** when an RFC is accepted by the team.
 - **Rejected:** when an RFC is considered rejected after team discussion.
 
-[Active RFC List](https://github.com/vitejs/vite/discussions?discussions_q=label%3A%22rfc%3A+active%22)
+[Active RFC List](https://github.com/vitejs/rfcs/discussions/categories/rfc-discussions)
 
 ## When to follow this process
 
@@ -59,7 +59,7 @@ In short, to get a major feature added to Vite, one must first get the RFC merge
 
 3.  If the proposal receives non-trivial interest from community members and generally positive feedback, you can prepare a Pull Request:
 
-    - Fork the Vite Core repo.
+    - Fork the `vitejs/rfcs` repo.
     - Create your proposal as `rfcs/0000-my-feature.md` (where "my-feature" is descriptive. don't assign an RFC number yet).
     - Submit a pull request. Make sure to link to the discussion thread.
 
@@ -111,3 +111,7 @@ Members of the [core team] will attempt to review some set of open RFC discussio
 [rust rfc process]: https://github.com/rust-lang/rfcs
 [ember rfc process]: https://github.com/emberjs/rfcs
 [core team]: https://vitejs.dev/team.html
+
+## Automation
+
+This repo uses some automation to create discussion threads from RFC PRs. You can learn more at [vitejs/rfcs-bot](https://github.com/vitejs/rfcs-bot).
